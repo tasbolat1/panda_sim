@@ -1,0 +1,72 @@
+#panda:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Controllers for singular joint ------------------------------------
+  # 
+  # Effort Position Controllers ---------------------------------------
+
+  # Forward Position Controllers ---------------------------------------
+  PositionJointInterface_J1_controller:
+    type: position_controllers/JointPositionController
+    joint: panda_joint1
+#    pid: {p: 800.0, i: 10, d: 5.0, i_clamp_min: -10000, i_clamp_max: 10000}
+
+  PositionJointInterface_J2_controller:
+    type: position_controllers/JointPositionController
+    joint: panda_joint2
+#    pid: {p: 800.0, i: 10, d: 5.0, i_clamp_min: -10000, i_clamp_max: 10000}
+    
+  PositionJointInterface_J3_controller:
+    type: position_controllers/JointPositionController
+    joint: panda_joint3
+#    pid: {p: 800.0, i: 10, d: 5.0, i_clamp_min: -10000, i_clamp_max: 10000}
+    
+  PositionJointInterface_J4_controller:
+    type: position_controllers/JointPositionController
+    joint: panda_joint4
+#    pid: {p: 800.0, i: 10, d: 5.0, i_clamp_min: -10000, i_clamp_max: 10000}
+    
+  PositionJointInterface_J5_controller:
+    type: position_controllers/JointPositionController
+    joint: panda_joint5
+#    pid: {p: 800.0, i: 10, d: 5.0, i_clamp_min: -10000, i_clamp_max: 10000}
+    
+  PositionJointInterface_J6_controller:
+    type: position_controllers/JointPositionController
+    joint: panda_joint6
+#    pid: {p: 800.0, i: 10, d: 5.0, i_clamp_min: -10000, i_clamp_max: 10000}
+    
+  PositionJointInterface_J7_controller:
+    type: position_controllers/JointPositionController
+    joint: panda_joint7
+#    pid: {p: 800.0, i: 10, d: 5.0, i_clamp_min: -10000, i_clamp_max: 10000}
+    
+    
+  # Trajectory Controllers ---------------------------------------
+  #   
+  
+  # Forward Position Controllers ---------------------------------------
+  PositionJointInterface_trajectory_controller:
+    type: position_controllers/JointTrajectoryController
+    joints: 
+      - panda_joint1
+      - panda_joint2
+      - panda_joint3
+      - panda_joint4
+      - panda_joint5
+      - panda_joint6
+      - panda_joint7
+
+    constraints:
+      goal_time: 0.5                   # Override default
+
+    state_publish_rate:  25            # Override default
+    action_monitor_rate: 30            # Override default
+    stop_trajectory_duration: 0        # Override default
+    
+
+
+
