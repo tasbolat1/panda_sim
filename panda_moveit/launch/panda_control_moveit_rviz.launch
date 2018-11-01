@@ -1,0 +1,15 @@
+h<?xml version="1.0" ?>
+<launch>
+  <arg name="load_gripper" default="false" />
+  <arg name="launch_rviz" default="true" />
+
+  <include file="$(find panda_control)/launch/panda_control.launch" >
+    <!-- arg name="load_gripper" value="$(arg load_gripper)" / -->
+  </include>
+
+  <include file="$(find panda_moveit)/launch/panda_moveit.launch">
+    < arg name="load_gripper" value="$(arg load_gripper)" />
+  </include>
+
+  <include file="$(find panda_moveit)/launch/moveit_rviz.launch" if="$(arg launch_rviz)" />
+</launch>

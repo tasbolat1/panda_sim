@@ -13,28 +13,28 @@
 
     <!-- Link0 -->
     <gazebo reference="${robot_name}_link0">
-      <material>Gazebo/Grey</material>
+      <material>Gazebo/White</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
     </gazebo>
 
     <!-- Link1 -->
     <gazebo reference="${robot_name}_link1">
-      <material>Gazebo/Orange</material>
+      <material>Gazebo/White</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
     </gazebo>
 
     <!-- Link2 -->
     <gazebo reference="${robot_name}_link2">
-      <material>Gazebo/Orange</material>
+      <material>Gazebo/White</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
     </gazebo>
 
     <!-- Link3 -->
     <gazebo reference="${robot_name}_link3">
-      <material>Gazebo/Orange</material>
+      <material>Gazebo/White</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
     </gazebo>
@@ -42,21 +42,21 @@
 
     <!-- Link4 -->
     <gazebo reference="${robot_name}_link4">
-      <material>Gazebo/Orange</material>
+      <material>Gazebo/White</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
     </gazebo>
 
     <!-- Link5 -->
     <gazebo reference="${robot_name}_link5">
-      <material>Gazebo/Orange</material>
+      <material>Gazebo/White</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
     </gazebo>
 
     <!-- Link6 -->
     <gazebo reference="${robot_name}_link6">
-      <material>Gazebo/Orange</material>
+      <material>Gazebo/White</material>
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
     </gazebo>

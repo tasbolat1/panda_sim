@@ -14,7 +14,7 @@
     <arg name="hardware_interface" default="PositionJointInterface" />
     <arg name="robot_name" default="panda" />
     <!-- arg name="model" default="iiwa14"/ -->
-    <arg name="trajectory" default="false"/>
+    <arg name="trajectory" default="true"/>
     
     <!-- Loads the Gazebo world. -->
     <include file="$(find panda_gazebo)/launch/panda_world.launch">
